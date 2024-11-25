@@ -177,7 +177,7 @@ The analysis provides insights into the possible effects of the cancer cluster o
 
 ### Future Work:
 - Investigating additional variables (e.g., distance from the cancer cluster) might help refine the results.
-- Expanding the event window to include more counties.
+- Expanding the sample to include more counties in control and treatment groups.
 
 ## References
 
