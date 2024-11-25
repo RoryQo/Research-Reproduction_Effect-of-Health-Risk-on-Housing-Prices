@@ -1,4 +1,4 @@
-<h1 align="center">Impact of Cancer Cluster on Home Prices</h1>
+<h1 align="center">The Effect of Health Risk on Housing Values: Evidence from a Cancer Cluster</h1>
 
 
 
