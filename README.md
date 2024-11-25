@@ -12,7 +12,13 @@ This repository contains R scripts that clean, merge, and analyze housing price 
 - Regression analysis and interpretation of results
 - Summary statistics and visualizations
 
-## Files in this Repository
+## Setup and Installation
+
+1. Clone this repository to your local machine.
+2. Install the necessary R packages by running the following in your R environment.
+3. Load the R scripts into RStudio or your preferred R environment. The scripts can be run sequentially to replicate the analysis from the paper.
+
+## Data Description
 
 ### 1. **Data Files:**
 - `cc.dta`: Contains home sales records for Churchill County (pre-cancer cluster data)
@@ -21,23 +27,6 @@ This repository contains R scripts that clean, merge, and analyze housing price 
 - `cc2.dta`: Contains additional home sales records for Churchill County (post-cancer cluster data)
 - `price.dta`: Contains the Nevada Home Price Index (NVHPI) used to adjust real sales prices
 
-### 2. **R Scripts:**
-- `Data Cleaning.R`: Script for loading, renaming variables, cleaning, and merging the real estate sales data from the various counties.
-- `Analysis.R`: Script for performing the regression analysis, including Difference-in-Differences (DID) estimates and interpreting the coefficients.
-- `Summary_Stats.R`: Script for calculating and displaying summary statistics, including comparisons between Churchill and Lyons counties.
-- `Visualizations.R`: Script for generating graphs and visualizations of housing prices over time, as well as confidence intervals.
-
-### 3. **Supporting Files:**
-- `data.csv`: The cleaned dataset resulting from the merging of all raw data files.
-- `README.md`: This file.
-
-## Setup and Installation
-
-1. Clone this repository to your local machine.
-2. Install the necessary R packages by running the following in your R environment.
-3. Load the R scripts into RStudio or your preferred R environment. The scripts can be run sequentially to replicate the analysis from the paper.
-
-## Data Description
 
 ### Variables:
 - `parcel`: Parcel identification number for the property.
@@ -65,9 +54,9 @@ The core analysis uses a **Difference-in-Differences (DID)** approach to estimat
 
 The model is specified as follows:
 
-\[
-\text{log(sale\_price)}_{it} = \beta_0 + \beta_1 \text{Post}_t + \beta_2 \text{cc}_i + \beta_3 (\text{Post}_t \times \text{cc}_i) + \epsilon_{it}
-\]
+```math
+log(sale\_price)_{it} = \beta_0 + \beta_1 \text{Post}_t + \beta_2 \text{cc}_i + \beta_3 Post_t cc_i + \epsilon_{it}
+```
 
 Where:
 - `log(sale_price)`: Log-transformed sales price of the home.
@@ -80,9 +69,9 @@ Where:
 
 The sales prices are adjusted for inflation using the Nevada Home Price Index (`nvhpi`) available for each quarter. The real sales prices are calculated as:
 
-\[
+```math
 \text{adjusted\_sales\_price} = \frac{\text{sales\_price} \times 100}{\text{nvhpi}}
-\]
+```
 
 ## Results
 
