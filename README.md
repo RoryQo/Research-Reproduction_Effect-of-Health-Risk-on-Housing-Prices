@@ -58,6 +58,10 @@ The model is specified as follows:
 log(sale\_price)_{it} = \beta_0 + \beta_1 \text{Post}_t + \beta_2 \text{cc}_i + \beta_3 Post_t cc_i + \epsilon_{it}
 ```
 
+```math
+sale\_price_{it} = \beta_0 + \beta_1 \text{Post}_t + \beta_2 \text{cc}_i + \beta_3 Post_t cc_i + \epsilon_{it}
+```
+
 Where:
 - `log(sale_price)`: Log-transformed sales price of the home.
 - `Post`: Indicator variable for years after 1999.
@@ -73,17 +77,32 @@ The sales prices are adjusted for inflation using the Nevada Home Price Index (`
 \text{adjusted\_sales\_price} = \frac{\text{sales\_price} \times 100}{\text{nvhpi}}
 ```
 
-## Results
 
-### Regression Results:
-- The regression analysis provides insights into the effect of the cancer cluster on housing prices, particularly in Churchill County after the emergence of the cancer cluster in 2000.
-- Key coefficients from the DID regressions are interpreted to assess how prices in Churchill County diverged from Lyons County after the cancer cluster began.
+
+## Results
 
 ### Summary Statistics:
 - Summary statistics are generated to compare housing characteristics (such as sale price, square footage, acres, and age) between the two counties before the cancer cluster emerged.
 
+
+### Regression Results:
+- The regression analysis provides insights into the effect of the cancer cluster on housing prices, particularly in Churchill County after the emergence of the cancer cluster in 2000.
+
+  <img src="https://github.com/RoryQo/Reproducing-Research_Effect-of-Health-Risk-on-Housing-Prices/blob/main/Figures/Diff-Diff.jpg?raw=true" width=500px style="order: 2;" />
+
+- Key coefficients from the DID regressions are interpreted to assess how prices in Churchill County diverged from Lyons County after the cancer cluster began.
+
+  <img src="https://github.com/RoryQo/Reproducing-Research_Effect-of-Health-Risk-on-Housing-Prices/blob/main/Figures/PrePost.jpg?raw=true" width=600px style="order: 1;" />
+
+
 ### Visualizations:
-- Plots illustrating the trend of average home prices over time in both counties are provided, with confidence intervals for the estimates.
+- Plot illustrating the trend of average home prices over time in both counties are provided, with confidence intervals for the estimates.
+- Plot illustrating the estimated effect of Event Study
+
+<p align="center">
+  <img src="https://github.com/RoryQo/Reproducing-Research_Effect-of-Health-Risk-on-Housing-Prices/blob/main/Figures/AVGHousePrice.jpg?raw=true" width=400px />
+  <img src="https://github.com/RoryQo/Reproducing-Research_Effect-of-Health-Risk-on-Housing-Prices/blob/main/Figures/EstEffect.jpg?raw=true" width=400px />
+</p>
 
 ## Assumptions
 
