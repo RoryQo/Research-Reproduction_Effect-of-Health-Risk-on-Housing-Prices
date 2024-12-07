@@ -28,23 +28,19 @@
       <ul>
         <li><a href="#difference-in-differences-did-estimation">Difference-in-Differences (DID) Estimation</a></li>
         <li><a href="#inflation-adjustments">Inflation Adjustments</a></li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td colspan="2">
-      <ul>
         <li><a href="#home-prices-over-time">Home Prices over Time</a></li>
         <li><a href="#event-study-analysis">Event Study Analysis</a></li>
       </ul>
     </td>
   </tr>
+ 
+     
 </table>
 
 
 ## Project Overview
 
-This project uses data from Lucas Davis' 2004 paper titled **"The Effect of Health Risk on Housing Values: Evidence from a Cancer Cluster"**, published in the *American Economic Review*. The paper investigates the effect of a child cancer cluster in Churchill County on housing prices, estimating the willingness of residents to pay to avoid environmental health risks. The goal of this project is to replicate the analysis using data from real estate transactions in two counties: Churchill and Lyons.
+This project uses data from Lucas Davis' 2004 paper titled *"The Effect of Health Risk on Housing Values: Evidence from a Cancer Cluster"*, published in the *American Economic Review*. The paper investigates the effect of a child cancer cluster in Churchill County on housing prices, estimating the willingness of residents to pay to avoid environmental health risks. The goal of this project is to replicate the analysis using data from real estate transactions in two counties: Churchill and Lyons.
 
 The data can be found by following the link on the AER’s website which will take you to the ICPSR’s data
 repository, or in this repositories data folder.
