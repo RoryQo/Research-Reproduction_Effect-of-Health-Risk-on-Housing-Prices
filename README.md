@@ -49,7 +49,11 @@ This project uses data from Lucas Davis' 2004 paper titled **"The Effect of Heal
 The data can be found by following the link on the AER’s website which will take you to the ICPSR’s data
 repository, or in this repositories data folder.
 
+[![OpenICPSR Data](https://img.shields.io/badge/OpenICPSR_Data-0056A0)](https://www.openicpsr.org/openicpsr/project/113786/version/V1/view?path=/openicpsr/113786/fcr:versions/V1/data&type=folder)
+
+
 [![View Original Research Paper](https://img.shields.io/badge/View%20Original%20Research%20Paper-0056A0?style=flat&logo=external-link&logoColor=white&color=0056A0)](https://www.aeaweb.org/articles?id=10.1257/0002828043052358)
+
 
 
 ## Data Description
