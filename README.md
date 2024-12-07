@@ -130,9 +130,9 @@ tempn$adj_index<- (tempn$sales*100)/tempn$nvhpi
 
 - The regression analysis provides insights into the effect of the cancer cluster on housing prices, particularly in Churchill County after the emergence of the cancer cluster in 2000.
 
-  <div style="display: flex; align-items: center;">
+ <p align="center">
     <img src="https://github.com/RoryQo/Reproducing-Research_Effect-of-Health-Risk-on-Housing-Prices/blob/main/Figures/Diff-Diff.jpg?raw=true" width="500px" style="order: 2;"/>
-    <div style="margin-left: 20px;">
+   </p>
         <p><strong>β<sub>0</sub>:</strong> Houses in the control group (Lyon County) have an average log(house price) of 11.519</p>
         <p><strong>β<sub>1</sub>:</strong> After the treatment, the log(house price) increases by approximately 23.1%</p>
         <p><strong>β<sub>2</sub>:</strong> Being in the treatment group (Churchill County) is associated with a 4.8% decrease in log real sales</p>
@@ -146,8 +146,9 @@ tempn$adj_index<- (tempn$sales*100)/tempn$nvhpi
 
 - Key coefficients from the DID regressions are interpreted to assess how prices in Churchill County diverged from Lyons County after the cancer cluster began.
 
+<p align="center">
   <img src="https://github.com/RoryQo/Reproducing-Research_Effect-of-Health-Risk-on-Housing-Prices/blob/main/Figures/PrePost.jpg?raw=true" width=600px style="order: 1;" />
-
+</p>
 
 ## Visualizations
 
@@ -159,7 +160,9 @@ tempn$adj_index<- (tempn$sales*100)/tempn$nvhpi
 
 The first visualization tracks the trend of home prices over time for both Churchill and Lyon counties. We observe if there was any significant price deviation around the year 2000, which corresponds to the identified cancer cluster event.
 
+<p align="center">
 <img src="https://github.com/RoryQo/Reproducing-Research_Effect-of-Health-Risk-on-Housing-Prices/blob/main/Figures/AVGHousePrice.jpg?raw=true" width=600px style="display: inline-block;" />
+</p>
 
 ### Event Study Analysis
 
@@ -169,7 +172,9 @@ We perform an event study to analyze the impact of the cancer cluster event in 2
 2. **Calculate Abnormal Returns**: We compare the mean sales price of homes before and after the event for both counties.
 3. **Plot Results**: We display the mean home prices with confidence intervals to visually identify any significant changes.
 
+<p align="center">
    <img src="https://github.com/RoryQo/Reproducing-Research_Effect-of-Health-Risk-on-Housing-Prices/blob/main/Figures/EstEffect.jpg?raw=true" width=500px style="display: inline-block;" />
+</p>
 
 ## Conclusion
 
